@@ -1,3 +1,7 @@
+body{
+	background-color: #fff;
+}
+
 header{
 	display: flex;
 	flex-direction: column;
@@ -8,16 +12,25 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	text-align: center;
 }
 
-#perfil{
+.centro img{
+	padding: 10px;
+}
+
+
+
+.perfil{
 	width: 100px;
 	height: auto;
 	border-radius: 50%;
 	margin-top: 10px;
 }
 
-#item-menu li a{
+ul li a{
+	margin-top: 10px;
+	color: #000;
 	text-decoration: none;
 	font-family: 'Roboto';
 }
@@ -28,4 +41,9 @@ header{
 
 .card:hover{
 	border-color: black;
+}
+
+p{
+	text-indent: 20px;
+	text-align: justify;
 }
