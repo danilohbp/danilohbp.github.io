@@ -17,30 +17,9 @@ header{
 	margin-top: 10px;
 }
 
-/*#item-menu{
-	padding: 0px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-#item-menu li{
-	list-style: none;
-	margin: 20px 20px 20px 20px;
-}
-*/
-
 #item-menu li a{
 	text-decoration: none;
 	font-family: 'Roboto';
-}
-
-.secao{
-	display: flex; 
-	flex-direction: row;
-	justify-content: center; 
-	padding: 10px;
 }
 
 .card{
