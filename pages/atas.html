@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Danilo HBP">
+	<meta name="kerywords" content="Apresentation, programmer, student">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gerador de Atas</title>
+	<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+</head>
+<body>
+	<main class="container" id="ata">
+		
+		<form class="row">
+			<h1 style="margin-top: 20px; font-family: 'Roboto';" >Gerador de Ata</h1>
+			<div class="col-12" style="margin-bottom: 20px;">
+				<label for="tituloAta" class="form-label">Título da Ata</label>
+				<input type="text" class="form-control" id="tituloAta">
+				<div id="tituloObs" class="form-text">Informe o título de acordo com o tema principal da ata.</div>
+			</div>
+			<div class="col-md-6" style="margin-bottom: 20px;">
+			    <label for="inputResponsavel" class="form-label">Nome do Responsável</label>
+			    <input type="text" class="form-control" id="inputResponsavel">
+			</div>
+			<div class="col-md-2">
+				<label for="inputPassword4" class="form-label">Data</label>
+				<input type="date" class="form-control" id="inputPassword4">
+			</div>
+			<div class="mb-3">
+			<label for="exampleInputPassword1" class="form-label">Descrição</label>
+			<textarea type="text" class="form-control" id="exampleInputPassword1"></textarea>
+			</div>
+
+			<div class="row" style="margin-bottom: 20px;">
+				<div class="col-6" >
+					<input type="text" class="form-control" placeholder="Nome do(a) Integrante" aria-label="Recipient's username" aria-describedby="button-addon2">
+				</div>
+				<div class="col-1">
+					<button class="btn btn-outline-secondary" type="button" id="button-addon2">Adicionar</button>
+				</div>	
+			</div>
+
+			<fieldset class="row" style="margin-bottom: 20px;">
+				<legend>Integrantes:</legend>
+				<details class="col-4">
+				  <summary>João Exemplo</summary>
+				  <div class="col-12">
+				  		<p>Trabalhando em:</p>
+				  		<div>
+				  		<div class="form-check">
+						  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+						  <label class="form-check-label" for="flexCheckDefault">
+						    Bugs
+						  </label>
+						</div>
+
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+						  <label class="form-check-label" for="flexCheckDefault">
+						    Melhorias
+						  </label>
+						</div>
+
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+						  <label class="form-check-label" for="flexCheckDefault">
+						    Testes
+						  </label>
+						</div>
+						<div class="row">
+							<div class="dropdown col-6">
+								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+								Status
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<li><a class="dropdown-item" href="#">Pendente</a></li>
+								<li><a class="dropdown-item" href="#">Em andamento</a></li>
+								<li><a class="dropdown-item" href="#">Ok</a></li>
+								</ul>
+							</div>	
+							<div class="col-6">
+								<input type="date" name="dataInicio">
+							</div>
+						</div>
+						
+				  </div>
+				</details>
+
+				<details class="col-4">
+				  <summary>João Exemplo</summary>
+				  <div class="col-12">
+				  		<h3>Desenvolvimento de Aplicativo.</h3>
+				  </div>
+				</details>
+
+				<details class="col-4">
+				  <summary>João Exemplo</summary>
+				  <div class="col-12">
+				  		<h3>Desenvolvimento de Aplicativo.</h3>
+				  </div>
+				</details>
+			</fieldset>
+			<div style="margin-top: 20px; display: flex; flex-direction: row; justify-content: center;">
+				<button type="submit" class="btn btn-primary" style="" onclick="CriaPDF()">Gerar PDF</button>		
+			</div>
+		  
+		</form>	
+	</main>
+</body>
+<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../assets/js/criador_pdf.js"></script>
+</html>

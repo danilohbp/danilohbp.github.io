@@ -8,6 +8,11 @@ header{
 	justify-content: center; 
 }
 
+a{
+	text-decoration: none;
+	color: #000;	
+}
+
 .centro{
 	display: flex;
 	flex-direction: row;
@@ -30,7 +35,6 @@ header{
 
 ul li a{
 	margin-top: 10px;
-	color: #000;
 	text-decoration: none;
 	font-family: 'Roboto';
 }
